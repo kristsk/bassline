@@ -1,0 +1,14 @@
+owners = ["Doodad"]
+nickname = "bassline"
+username = "bassline"
+realname = "bassline"
+server = "127.0.0.1"
+port = 6667
+use_tls = false
+password = ""
+encoding = "UTF-8"
+channels = ["#test"]
+umodes = "+BR"
+
+[options]
+db_filename = "/path/to/bassline-sqlite-database-file"
