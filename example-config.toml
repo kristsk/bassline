@@ -1,5 +1,6 @@
 owners = ["Doodad"]
 nickname = "bassline"
+alt_nicks = ["bassline_", "bassline__"]
 username = "bassline"
 realname = "bassline"
 server = "127.0.0.1"
@@ -9,6 +10,10 @@ password = ""
 encoding = "UTF-8"
 channels = ["#test"]
 umodes = "+BR"
+# Send a PING after this many idle seconds, and drop the connection if no PONG
+# arrives within ping_timeout seconds (irc defaults: 180 / 10).
+ping_time = 60
+ping_timeout = 30
 
 [options]
 db_filename = "/path/to/bassline-sqlite-database-file"

@@ -12,7 +12,7 @@ pub struct Write {
 }
 
 impl<'conn> Bassline<'conn> {
-    pub fn new(db_connection: &'conn rusqlite::Connection) -> Result<Bassline, String> {
+    pub fn new(db_connection: &'conn rusqlite::Connection) -> Result<Bassline<'conn>, String> {
         Bassline::check_database(&db_connection)?;
         Ok(Bassline {
             get_random_write_statement: db_connection.prepare(include_str!("../database/get_random_write.sql")).unwrap(),
