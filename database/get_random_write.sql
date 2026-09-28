@@ -1,1 +1,1 @@
-SELECT id, created_by, content FROM main.writes ORDER BY RANDOM() LIMIT 1
+SELECT id, created_by, content FROM main.writes WHERE hidden = 0 ORDER BY RANDOM() LIMIT 1
